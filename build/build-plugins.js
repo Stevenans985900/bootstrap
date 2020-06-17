@@ -38,7 +38,8 @@ const bsPlugins = {
   ScrollSpy: path.resolve(__dirname, '../js/src/scrollspy.js'),
   Tab: path.resolve(__dirname, '../js/src/tab.js'),
   Toast: path.resolve(__dirname, '../js/src/toast.js'),
-  Tooltip: path.resolve(__dirname, '../js/src/tooltip.js')
+  Tooltip: path.resolve(__dirname, '../js/src/tooltip.js'),
+  FileInput: path.resolve(__dirname, '../js/src/file-input.js')
 }
 const rootPath = path.resolve(__dirname, '../js/dist/')
 
@@ -73,7 +74,7 @@ const getConfigByPluginKey = pluginKey => {
     }
   }
 
-  if (pluginKey === 'Alert' || pluginKey === 'Tab') {
+  if (pluginKey === 'Alert' || pluginKey === 'Tab' || pluginKey === 'FileInput') {
     return defaultPluginConfig
   }
 
