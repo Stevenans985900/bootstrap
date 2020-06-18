@@ -65,9 +65,6 @@ To enable multiple file selection just add `multiple` on your `<input>`
 File inputs will be reset on a form's `reset` event.
 
 {{< example >}}
-<button id="btnResetFormFileInput" class="btn btn-primary">
-  Reset form
-</button>
 <form id="formFileInput">
   <div class="form-file" data-toggle="file-input">
     <input type="file" class="form-file-input" id="customFileForm">
@@ -77,6 +74,9 @@ File inputs will be reset on a form's `reset` event.
     </label>
   </div>
 </form>
+<button id="btnResetFormFileInput" class="btn btn-primary mt-3">
+  Reset form
+</button>
 {{< /example >}}
 
 ## Sizing
@@ -130,7 +130,7 @@ var fileInput = new bootstrap.FileInput(formFileNode)
 
 #### dispose
 
-Remove event listeners and stored data. Your file input will remain on the DOM but won't change anymore.
+Remove event listeners and stored data. Your file input will remain in the DOM but won't change any more.
 
 {{< highlight js >}}fileInput.dispose(){{< /highlight >}}
 
@@ -142,7 +142,7 @@ Restore the default text which was set on init.
 
 #### getInstance
 
-*Static* method which allows you to get the file input instance associated with a DOM element
+*Static* method which allows you to get the file input instance associated with a DOM element.
 
 {{< highlight js >}}
 var formFileNode = document.getElementById('.form-file')
